@@ -11,26 +11,32 @@ source:
   sha256: 3de3b7dfa79414a86eb9d9de0ddc2361808f6c4e22ad99f843f6983b592f22e3
 
 build:
-  number: 0
-  noarch: python
+  number: 1
+  skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python
-    - matplotlib-base
+    - setuptools
   run:
+    - basemap
+    - bokeh
     - cmocean
     - folium >=0.6.0
     - gdal
     - geoarray >=0.8.30
     - geojson
     - geopandas
-    - matplotlib-base
+    - holoviews
+    - matplotlib
     - numpy
     - pandas
     - plotly
+    - pyfftw
+    - pykrige
+    - pyproj >2.2.0
     - py-tools-ds >=0.14.28
     - python
     - scikit-image
@@ -40,15 +46,22 @@ requirements:
 test:
   imports:
     - arosics
+    - arosics.COREG
+    - arosics.COREG_LOCAL
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://pypi.org/project/arosics/
   summary: An Automated and Robust Open-Source Image Co-Registration Software for Multi-Sensor Satellite Data
-  license: GPL-3.0-only
+  license: GPL-3.0-only-or-later
   license_file: LICENSE
 
 extra:
   recipe-maintainers:
+    - danschef
     - rluria14
     - ndmaxar
     - RyanHackney
