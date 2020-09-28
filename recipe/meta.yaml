@@ -46,8 +46,12 @@ requirements:
 test:
   imports:
     - arosics
-    - arosics.COREG
-    - arosics.COREG_LOCAL
+    - arosics.CoReg
+    - arosics.CoReg_local
+    - arosics.DeShifter
+    - arosics.geometry
+    - arosics.plotting
+    - arosics.Tie_Point_Grid
   commands:
     - pip check
   requires:
