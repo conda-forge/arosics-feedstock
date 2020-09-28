@@ -11,7 +11,7 @@ source:
   sha256: 3de3b7dfa79414a86eb9d9de0ddc2361808f6c4e22ad99f843f6983b592f22e3
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -69,4 +69,3 @@ extra:
     - rluria14
     - ndmaxar
     - RyanHackney
-    - danschef
