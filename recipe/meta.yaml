@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "0.9.24" %}
+{% set version = "0.9.25" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3de3b7dfa79414a86eb9d9de0ddc2361808f6c4e22ad99f843f6983b592f22e3
+  sha256: ae919fe62043227d5f90dcaa1e51b719ba0dba0d55ee146aa56840157284d3ac
 
 build:
-  number: 3
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,6 +20,7 @@ requirements:
     - pip
     - python
     - setuptools
+    - setuptools-git
   run:
     - basemap
     - bokeh
