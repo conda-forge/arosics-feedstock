@@ -23,7 +23,6 @@ requirements:
     - setuptools-git
   run:
     - basemap
-    - bokeh
     - cmocean
     - folium >=0.6.0
     - gdal
@@ -37,7 +36,6 @@ requirements:
     - plotly
     - pyfftw
     - pykrige
-    - pyproj >2.2.0
     - py-tools-ds >=0.14.28
     - python
     - scikit-image
