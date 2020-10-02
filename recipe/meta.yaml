@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "0.9.25" %}
+{% set version = "0.9.26" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ae919fe62043227d5f90dcaa1e51b719ba0dba0d55ee146aa56840157284d3ac
+  sha256: efce9b5e33e61762bd5aedda8731f9881e248979588c894abf56e3b6f7e9653a
 
 build:
   number: 0
@@ -23,7 +23,6 @@ requirements:
     - setuptools-git
   run:
     - basemap
-    - bokeh
     - cmocean
     - folium >=0.6.0
     - gdal
@@ -37,7 +36,6 @@ requirements:
     - plotly
     - pyfftw
     - pykrige
-    - pyproj >2.2.0
     - py-tools-ds >=0.14.28
     - python
     - scikit-image
