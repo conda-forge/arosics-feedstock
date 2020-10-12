@@ -5,11 +5,9 @@ Home: https://pypi.org/project/arosics/
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arosics-feedstock/blob/master/LICENSE.txt)
 
 Summary: An Automated and Robust Open-Source Image Co-Registration Software for Multi-Sensor Satellite Data
-
-
 
 Current build status
 ====================
