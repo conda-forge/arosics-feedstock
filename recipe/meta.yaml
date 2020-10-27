@@ -36,7 +36,7 @@ requirements:
     - plotly
     - pyfftw
     - pykrige
-    - py-tools-ds >=0.14.28
+    - py-tools-ds >=0.15.8
     - python
     - scikit-image
     - shapely
