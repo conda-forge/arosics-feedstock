@@ -36,6 +36,7 @@ requirements:
     - plotly
     - pyfftw
     - pykrige
+    - pyproj >2.2.0
     - py-tools-ds >=0.15.10
     - python
     - scikit-image
