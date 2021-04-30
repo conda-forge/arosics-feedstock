@@ -11,7 +11,7 @@ source:
   sha256: 01ee7b2cc47d083945bffbe4e143f7cee8ac830297fd6a616c11e5d082d5ea88
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -65,6 +65,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - danschef
     - rluria14
     - ndmaxar
