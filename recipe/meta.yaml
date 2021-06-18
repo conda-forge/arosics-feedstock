@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e06196c148ec1fcb92ff234b77b9e46656479a997aee40d4766bd734128604ce
+  sha256: 8380290729d6cc501183d72fc0adf40c7fbb55c36a1e4eb27acbc2d251b99f5b
 
 build:
   number: 0
