@@ -27,7 +27,7 @@ requirements:
     - cartopy
     - cmocean
     - folium >=0.6.0,!=0.12.0
-    - gdal !=3.2.1
+    - gdal
     - geoarray >=0.12.1
     - geojson
     - geopandas
@@ -39,7 +39,7 @@ requirements:
     - pyfftw
     - pykrige
     - pyproj >2.2.0
-    - py-tools-ds >=0.17.1
+    - py-tools-ds >=0.17.2
     - python
     - scikit-image
     - shapely
