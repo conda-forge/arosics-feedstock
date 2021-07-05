@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.4.6" %}
+{% set version = "1.4.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8fcb451f7ab5f2221a303bf1a5387ae6d14f9f1834f42af3b43c7e92f96e11e9
+  sha256: 4a34d056ecca21819250740266595457d5d64419cd79a4c7fcded5051ba80a42
 
 build:
   number: 0
@@ -39,7 +39,7 @@ requirements:
     - pyfftw
     - pykrige
     - pyproj >2.2.0
-    - py-tools-ds >=0.17.2
+    - py-tools-ds >=0.17.3
     - python
     - scikit-image
     - shapely
