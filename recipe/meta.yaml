@@ -39,7 +39,7 @@ requirements:
     - pyfftw
     - pykrige
     - pyproj >2.2.0
-    - py-tools-ds >=0.17.2
+    - py-tools-ds >=0.17.3
     - python
     - scikit-image
     - shapely
