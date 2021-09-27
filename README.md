@@ -1,9 +1,9 @@
 About arosics
 =============
 
-Home: https://pypi.org/project/arosics/
+Home: https://git.gfz-potsdam.de/danschef/arosics
 
-Package license: GPL-3.0-or-later
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/arosics-feedstock/blob/master/LICENSE.txt)
 
