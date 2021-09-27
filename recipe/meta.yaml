@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.5.1" %}
+{% set version = "1.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cdb8ce2f6c2264140e89dfd8a0d67e4161782fc18bf14227201af5dd92b5ca54
+  sha256: 7698d8efd6ef0b4e0380f50b287ea33fd6cba631cc90caa5857c64531598c53c
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - cmocean
     - folium >=0.6.0,!=0.12.0
     - gdal
-    - geoarray >=0.13.4
+    - geoarray >=0.15.0
     - geojson
     - geopandas
     - holoviews
@@ -40,7 +40,7 @@ requirements:
     - pyfftw
     - pykrige
     - pyproj >2.2.0
-    - py-tools-ds >=0.17.8
+    - py-tools-ds >=0.18.0
     - python
     - scikit-image >=0.16.0
     - shapely
@@ -61,9 +61,9 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/arosics/
+  home: https://git.gfz-potsdam.de/danschef/arosics
   summary: An Automated and Robust Open-Source Image Co-Registration Software for Multi-Sensor Satellite Data
-  license: GPL-3.0-or-later
+  license: Apache-2.0
   license_file: LICENSE
 
 extra:
