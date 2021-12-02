@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.7.2" %}
+{% set version = "1.7.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f98cfedc46103ea411a3f398f104ae00c6ebd99fc46ccdb44f057c4abae7bc2
+  sha256: 5a6e8754e4da1f8808d89940be5df82f8aa1a9339f42aaff54bc3e05c8bf92b3
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -27,7 +27,7 @@ requirements:
     - cartopy
     - colorama  # [win]  # missing upstream dependency (holoviews > panel > tqdm > colorama)
     - cmocean
-    - folium >=0.6.0,!=0.12.0
+    - folium >=0.6.0,!=0.12.0,!=0.12.1
     - gdal
     - geoarray >=0.15.0
     - geojson
