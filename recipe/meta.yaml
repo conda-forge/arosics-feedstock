@@ -23,7 +23,7 @@ requirements:
     - python
     - setuptools
     - setuptools-git
-    - setuptools-scm
+    - setuptools-scm  # temporarily needed until a new folium release is out (>0.12.1.post1)
   run:
     - cartopy
     - colorama  # [win]  # missing upstream dependency (holoviews > panel > tqdm > colorama)
