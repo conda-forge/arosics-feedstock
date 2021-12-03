@@ -23,11 +23,12 @@ requirements:
     - python
     - setuptools
     - setuptools-git
+    - setuptools-scm
   run:
     - cartopy
     - colorama  # [win]  # missing upstream dependency (holoviews > panel > tqdm > colorama)
     - cmocean
-    - folium >=0.6.0,<0.12.0
+    - folium >=0.6.0,!=0.12.0
     - gdal
     - geoarray >=0.15.0
     - geojson
