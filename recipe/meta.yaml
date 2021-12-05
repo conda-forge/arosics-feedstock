@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.7.2" %}
+{% set version = "1.7.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f98cfedc46103ea411a3f398f104ae00c6ebd99fc46ccdb44f057c4abae7bc2
+  sha256: 5a6e8754e4da1f8808d89940be5df82f8aa1a9339f42aaff54bc3e05c8bf92b3
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - python
     - setuptools
     - setuptools-git
+    - setuptools-scm  # temporarily needed until a new folium release is out (>0.12.1.post1)
   run:
     - cartopy
     - colorama  # [win]  # missing upstream dependency (holoviews > panel > tqdm > colorama)
