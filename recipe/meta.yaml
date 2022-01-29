@@ -38,7 +38,7 @@ requirements:
     - numpy
     - pandas
     - plotly
-    - pyfftw
+    - pyfftw <0.13.0
     - pykrige
     - pyproj >2.2.0
     - py-tools-ds >=0.18.0
