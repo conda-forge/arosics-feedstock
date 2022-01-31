@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.7.4" %}
+{% set version = "1.7.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e22e9fb806c66c69c5a236096855d606e5623b2dc5cd3121f253cb4f9403b405
+  sha256: 1b654b364f5176e67ece9c63494be0550597ad4e824b68bbd7ad287c94c3a302
 
 build:
   number: 0
@@ -38,7 +38,7 @@ requirements:
     - numpy
     - pandas
     - plotly
-    - pyfftw
+    - pyfftw <0.13.0
     - pykrige
     - pyproj >2.2.0
     - py-tools-ds >=0.18.0
