@@ -12,7 +12,8 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<36]
+  skip: true  # [py<37 and not osx]
+  skip: true  # [py<38 and osx]  # 3.7 build for OSX fails with GDAL import error
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - arosics = arosics.arosics_cli:main
