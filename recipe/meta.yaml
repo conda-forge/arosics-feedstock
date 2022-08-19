@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.7.7" %}
+{% set version = "1.7.8" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 283cf4559f50e3c0de6a606c0ebafdf27ecb21db13ee120ed3d52165be9e0849
+  sha256: f2af8de867ea896b3a0b0f2b72d8896c6e4ecc2bbfbd3c07cc2c40302cb5f0e4
 
 build:
   number: 0
   skip: true  # [py<37 and not osx]
-  skip: true  # [py<38 and osx]  # 3.7 build for OSX fails with GDAL import error
+  skip: true  # [py<38 and osx]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - arosics = arosics.arosics_cli:main
