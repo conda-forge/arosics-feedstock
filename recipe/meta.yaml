@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.7.8" %}
+{% set version = "1.7.9" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f2af8de867ea896b3a0b0f2b72d8896c6e4ecc2bbfbd3c07cc2c40302cb5f0e4
+  sha256: 3dccded760c176d58c7fc4e86eb09ab31e9749ee3922c30a8fbce21a768757e3
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<37 and not osx]
   skip: true  # [py<38 and osx]
   script: {{ PYTHON }} -m pip install . -vv
@@ -37,7 +37,7 @@ requirements:
     - numpy
     - pandas
     - plotly
-    - pyfftw <0.13.0
+    - pyfftw <0.13.0|=0.13.0=*0  # https://github.com/pyFFTW/pyFFTW/issues/294
     - pykrige
     - pyproj >2.2.0
     - py-tools-ds >=0.18.0
