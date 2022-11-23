@@ -11,7 +11,7 @@ source:
   sha256: 3dccded760c176d58c7fc4e86eb09ab31e9749ee3922c30a8fbce21a768757e3
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<37 and not osx]
   skip: true  # [py<38 and osx]
   script: {{ PYTHON }} -m pip install . -vv
