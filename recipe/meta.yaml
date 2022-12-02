@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.7.9" %}
+{% set version = "1.8.0" %}
 
 
 package:
@@ -8,12 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3dccded760c176d58c7fc4e86eb09ab31e9749ee3922c30a8fbce21a768757e3
+  sha256: 947c9025aa10a230696d7550b738b095b9f54085e3f6bf3da6fee1278d865f26
 
 build:
-  number: 1
-  skip: true  # [py<37 and not osx]
-  skip: true  # [py<38 and osx]
+  number: 0
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - arosics = arosics.arosics_cli:main
@@ -37,7 +36,7 @@ requirements:
     - numpy
     - pandas
     - plotly
-    - pyfftw <0.13.0|=0.13.0=*0  # https://github.com/pyFFTW/pyFFTW/issues/294
+    - pyfftw
     - pykrige
     - pyproj >2.2.0
     - py-tools-ds >=0.18.0
