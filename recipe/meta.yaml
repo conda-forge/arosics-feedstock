@@ -11,9 +11,8 @@ source:
   sha256: 947c9025aa10a230696d7550b738b095b9f54085e3f6bf3da6fee1278d865f26
 
 build:
-  number: 0
-  skip: true  # [py<37 and not osx]
-  skip: true  # [py<38 and osx]
+  number: 1
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - arosics = arosics.arosics_cli:main
@@ -37,7 +36,7 @@ requirements:
     - numpy
     - pandas
     - plotly
-    - pyfftw <0.13.0|=0.13.0=*0  # https://github.com/pyFFTW/pyFFTW/issues/294
+    - pyfftw
     - pykrige
     - pyproj >2.2.0
     - py-tools-ds >=0.18.0
