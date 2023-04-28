@@ -18,6 +18,9 @@ build:
     - arosics = arosics.arosics_cli:main
 
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - pip
     - python
