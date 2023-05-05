@@ -11,7 +11,7 @@ source:
   sha256: 3ff9c0358e71d1f066529c7b4b1731749ffc81bd035595428a826be6be2a3488
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -37,6 +37,7 @@ requirements:
     - holoviews
     - matplotlib-base
     - numpy
+    - packaging
     - pandas
     - plotly
     - pyfftw
@@ -45,6 +46,8 @@ requirements:
     - py-tools-ds >=0.18.0
     - python
     - scikit-image >=0.16.0
+    - scikit-learn
+    - scipy
     - shapely
 
 test:
