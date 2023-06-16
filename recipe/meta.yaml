@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3ff9c0358e71d1f066529c7b4b1731749ffc81bd035595428a826be6be2a3488
+  sha256: 851aa5b445c56875b93a9afe972acaa679f13adb51cc9a3c4e0cdeb41b4e748d
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -49,6 +49,8 @@ requirements:
     - scikit-learn
     - scipy
     - shapely
+
+    - markdown-it-py <3  # temporarily added until https://github.com/conda-forge/panel-feedstock/pull/64 is merged/solved
 
 test:
   imports:
