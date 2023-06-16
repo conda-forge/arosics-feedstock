@@ -50,6 +50,8 @@ requirements:
     - scipy
     - shapely
 
+    - markdown-it-py <3  # temporarily added until https://github.com/conda-forge/panel-feedstock/pull/64 is merged/solved
+
 test:
   imports:
     - arosics
