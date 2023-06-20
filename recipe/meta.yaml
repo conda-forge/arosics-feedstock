@@ -11,7 +11,7 @@ source:
   sha256: 851aa5b445c56875b93a9afe972acaa679f13adb51cc9a3c4e0cdeb41b4e748d
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -49,8 +49,6 @@ requirements:
     - scikit-learn
     - scipy
     - shapely
-
-    - markdown-it-py <3  # temporarily added until https://github.com/conda-forge/panel-feedstock/pull/64 is merged/solved
 
 test:
   imports:
