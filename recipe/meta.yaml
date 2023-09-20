@@ -11,7 +11,7 @@ source:
   sha256: b9547809a895ac61c5f67b3339272de56fcc2d9275b42cd81eb1f873771cb05b
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -45,7 +45,7 @@ requirements:
     - pyproj >2.2.0
     - py-tools-ds >=0.18.0
     - python
-    - scikit-image >=0.16.0
+    - scikit-image >=0.21.0
     - scikit-learn
     - scipy
     - shapely
