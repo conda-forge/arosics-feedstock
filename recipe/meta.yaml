@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.10.1" %}
+{% set version = "1.10.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 518488d63812d45267cc41b9abd034fd2e16df80f16929158500609593e2e723
+  sha256: f213919063eea5db79566da7a0a3f3c5baf3fdeda842520a0817cf3d8f0ee0d4
 
 build:
   number: 0
@@ -35,6 +35,7 @@ requirements:
     - geojson
     - geopandas
     - holoviews
+    - joblib
     - matplotlib-base
     - numpy
     - packaging
