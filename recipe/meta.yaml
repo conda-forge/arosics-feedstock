@@ -1,5 +1,5 @@
 {% set name = "arosics" %}
-{% set version = "1.12.1" %}
+{% set version = "1.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48cd360d0d93e70a12feaf52ed06876475a7fdc4b88a5f758cfe750db7019b03
+  sha256: a7ecd5cbf1fbb255fcfc9b149c561c8211c77244a27e591dbad1c5cfac841972
 
 build:
   number: 0
@@ -40,9 +40,8 @@ requirements:
     - numpy
     - pandas
     - plotly
-    - pykrige
     - pyproj >2.2.0
-    - py-tools-ds >=0.18.0
+    - py-tools-ds >=0.23.2
     - python
     - scikit-image >=0.21.0
     - scikit-learn
