@@ -40,7 +40,6 @@ requirements:
     - numpy
     - pandas
     - plotly
-    - pykrige
     - pyproj >2.2.0
     - py-tools-ds >=0.18.0
     - python
