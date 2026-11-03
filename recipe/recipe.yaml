@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: arosics
-  version: "1.13.2"
+  version: "1.14.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,11 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: b485ff83fa0c85be03433d027f7ce81184f297f3ae66449c041269371754f8a0
+  sha256: 656c7a7f852bf13c311a5b1baaa8616dc5cdbbe38cef327184a6bdc6db58e6a6
 
 build:
-  number: 1
-  skip: match(python, "<3.11")
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv
   python:
     entry_points:
@@ -27,10 +26,9 @@ requirements:
     - if: build_platform != target_platform
       then: cross-python_${{ target_platform }}
   host:
+    - hatchling
     - pip
     - python
-    - setuptools
-    - setuptools-git
   run:
     - cartopy
     - cmocean
